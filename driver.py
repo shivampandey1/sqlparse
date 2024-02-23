@@ -29,9 +29,11 @@ def main():
         return
 
     # Ask the user to enter an SQL query
-    sql_query = input("Enter your SQL query: ")
-    result = run_sql_query(sql_query, df)
-    return result
+    while(True):
+        sql_query = input("Enter your SQL query, or 0 to terminate: ")
+        if sql_query == "0": return
+        result = run_sql_query(sql_query, df)
+        
     
 
 if __name__ == "__main__":
