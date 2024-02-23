@@ -69,8 +69,8 @@ def run_sql_query(sql_query, df):
     # Apply LIMIT
     if has_limit:
         query_result = query_result.head(limit)
-
-    # print(query_result)
+    
+    print(query_result)
     # print("----------------------------")
     return query_result
 
